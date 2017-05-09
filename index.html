@@ -4,22 +4,67 @@
 	<meta charset="UTF-8">
 	<title>Labour</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
+
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
 </head>
 <body>
 	<div class="ui container">
-		<div class="ui menu borderless secondary pointing large teal">
-			<a href="/" class="item active">Головна сторінка</a>
-			<a href="#" class="item">Актуально</a>
-			<a href="#" class="item">Новини</a>
-			<a href="#" class="item">Про Департамент</a>
-			<a href="#" class="item">Основні напрямки діяльності</a>
-			<a href="#" class="item">Підвідомчі установи</a>
-			<a href="#" class="item">Соціальні права та гарантії</a>
+		<div class="ui two column grid">
+			<div class="column menu-column">
+				<div class="ui secondary vertical menu small teal">
+					<a href="#" class="active item">Головна сторінка</a>
+					<a href="#" class="item">Актуально</a>
+					<a href="#" class="item">Новини</a>
+					<div class="ui dropdown item">
+						<div class="dropdown icon"></div>
+						Про Департамент
+						<div class="menu">
+							<a href="#" class="item">структура</a>
+							<a href="#" class="item">керівництво</a>
+							<a href="#" class="item">положення</a>
+							<a href="#" class="item">графік прийому</a>
+						</div>
+					</div>
+					<div class="ui dropdown item">
+						<div class="dropdown icon"></div>
+						Основні напрямки діяльності
+						<div class="menu">
+							<a href="#" class="item">Управління праці та соціальних питань</a>
+							<a href="#" class="item">Управління Служб у справах дітей</a>
+							<a href="#" class="item">Управління праці та соціального захисту населення</a>
+						</div>
+					</div>
+					<div class="ui dropdown item">
+						<div class="dropdown icon"></div>
+						Підвідомчі установи
+						<div class="menu">
+							<a href="#" class="item">територіальні центри надання соціальних послуг</a>
+							<a href="#" class="item">центри соціальних служб для сім'ї, дітей та молоді</a>
+							<a href="#" class="item">міський центр комплексної реабілітації осіб з інвалідністю</a>
+							<a href="#" class="item">«Промінь» міський центр реінтеграції бездомних осіб</a>
+							<a href="#" class="item">комунальний заклад соціального захисту дітей «Центр соціально – психологічної реабілітації дітей»</a>
+						</div>
+					</div>
+					<a href="#" class="item">Соціальні права та гарантії</a>
+					<a href="#" class="item">Державні соціальні стандарти</a>
+					<a href="#" class="item">Нормативні акти Харківської міської ради</a>
+					<a href="#" class="item">Міжтериторіальне співробітництво</a>
+					<a href="#" class="item">Доступ до публічної інформації</a>
+					<a href="#" class="item">Запобігання корупції</a>
+					<a href="#" class="item">Громадські обговорення</a>
+				</div>
+			</div>
+			<div class="column content">
+		
+			</div>
 		</div>
 	</div>
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.js"></script>
+	<script>
+		$('.ui.dropdown').dropdown({on: 'hover'});
+	</script>
 </body>
 </html>

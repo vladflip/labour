@@ -1,1 +1,1 @@
-.menu{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+.menu-column{-webkit-box-flex:0;-ms-flex:0;flex:0}.menu a.item{transition:hover 250ms;}.menu a.item:hover{color:#00b5ad !important}.content{-webkit-box-flex:1;-ms-flex:1;flex:1}
