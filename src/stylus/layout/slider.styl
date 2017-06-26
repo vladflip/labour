@@ -1,0 +1,41 @@
+.slider
+	margin-bottom 20px
+	
+	.owl-stage
+		cursor grab
+	
+	&-item
+		width 100%
+		background-position top center
+		background-size cover
+		background-repeat no-repeat
+
+		// fix blink owl-carousel
+		-webkit-backface-visibility: hidden;
+		-webkit-transform: translateZ(0) scale(1.0, 1.0);
+		
+		height 400px
+		
+		+below(1200px)
+			height 300px
+	
+	.owl-nav
+		display flex
+		justify-content center
+		align-items center
+		color $blue
+		font-size 30px
+		height 60px
+		
+		.owl-prev
+			margin-right 100px
+			transition transform 300ms
+			
+			&:hover
+				transform translateX(-5px)
+		
+		.owl-next
+			transition transform 300ms
+			
+			&:hover
+				transform translateX(5px)

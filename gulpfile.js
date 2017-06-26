@@ -5,11 +5,12 @@ const server = require('./gulp/server.js');
 const argv = require('yargs').argv;
 const run = require('run-sequence');
 
-gulp.task('default', ['stylus'], function(){
+gulp.task('default', ['stylus', 'coffee'], function(){
 	if(!argv.build){
 		run('server');
 
 		gulp.watch('src/stylus/**/*', ['stylus']);
+		gulp.watch('src/coffee/**/*', ['coffee']);
 		gulp.watch('*.html', function(){
         	server.reload();
         });
