@@ -5,7 +5,6 @@ $('.owl-carousel').owlCarousel
 	smartSpeed: 1000
 	loop: true
 	dots: false
-	nav: true
 	navText: [
 		'<i class="fa fa-arrow-left"></i>'
 		'<i class="fa fa-arrow-right"></i>'
