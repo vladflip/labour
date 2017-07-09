@@ -1,0 +1,34 @@
+.sidebar
+	display flex
+	flex-direction column
+	align-items center
+	width 300px
+	
+	&-item
+		border 2px solid $blue
+		padding 10px 15px
+		border-radius 5px
+		cursor pointer
+		color $blue
+		display flex
+		align-items center
+		
+		transition all 400ms
+		
+		&:hover
+			color white
+			background-color $blue
+		
+		&-name
+			color inherit
+			font-weight 500
+			font-size 14px
+			margin-left 10px
+			line-height 25px
+			flex 1
+		
+		&-icon
+			background-size 100%
+			background url(../img/crest.png) center no-repeat
+			height 60px
+			width 60px
