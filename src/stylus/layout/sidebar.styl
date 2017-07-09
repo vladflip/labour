@@ -3,21 +3,34 @@
 	flex-direction column
 	align-items center
 	width 300px
+	margin-top 10px
+	
+	&-header
+		font-weight 400
+		text-transform uppercase
+		font-family Roboto
 	
 	&-item
-		border 2px solid $blue
+		a
+			display flex
+			align-items center
+			width 100%
 		padding 10px 15px
-		border-radius 5px
 		cursor pointer
 		color $blue
-		display flex
-		align-items center
+		border-bottom 1px solid $blue
+		width 100%
 		
-		transition all 400ms
+		transition background-color 300ms
+		
+		padding-top 15px
+		padding-bottom 15px
+		
+		&:last-child
+			border-bottom 0
 		
 		&:hover
-			color white
-			background-color $blue
+			background-color lighten($blue, 90%)
 		
 		&-name
 			color inherit
@@ -25,10 +38,15 @@
 			font-size 14px
 			margin-left 10px
 			line-height 25px
+			width 170px
 			flex 1
 		
 		&-icon
-			background-size 100%
-			background url(../img/crest.png) center no-repeat
+			background-position center 
+			background-repeat no-repeat
+			background-size contain
 			height 60px
 			width 60px
+
+			&--alone
+				width 100%
