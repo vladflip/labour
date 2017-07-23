@@ -1,5 +1,5 @@
 .hero
-	height 300px
+	padding 50px 0
 	
 	.container
 		display flex
@@ -31,8 +31,7 @@
 			margin-top 20px
 			line-height 25px
 			font-size 15px
-			font-weight 300
-			
+			font-weight 300			
 	
 	&-search
 		position relative
@@ -41,19 +40,15 @@
 			position absolute
 			right 10px
 			top 27%
-			color #777
+			color $blue
 
 		&-input
+			color $blue
+			border 1px solid $blue
 			background-color rgba(255,255,255,.7)
 			border-radius 4px
-			border none
 			outline none
 			padding 8px 30px 8px 14px
 			for prefix in '::-webkit-input-' ':-ms-input-' '::-moz-' ':-moz-'
 				&{prefix}placeholder
-					color #777 !important
-			
-			transition background-color 250ms
-			
-			&:focus
-				background-color rgba(255,255,255,.99)
+					color $blue !important
