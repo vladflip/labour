@@ -34,21 +34,22 @@
 			font-weight 300			
 	
 	&-search
-		position relative
+		border 1px solid $blue
+		background-color rgba(255,255,255,.7)
+		border-radius 4px
+		display flex
+		align-items center
+		padding 1px
 		
 		&-icon
-			position absolute
-			right 10px
-			top 27%
 			color $blue
+			margin-right 14px
 
 		&-input
 			color $blue
-			border 1px solid $blue
-			background-color rgba(255,255,255,.7)
-			border-radius 4px
+			border none
 			outline none
-			padding 8px 30px 8px 14px
+			padding 8px 14px 8px 14px
 			for prefix in '::-webkit-input-' ':-ms-input-' '::-moz-' ':-moz-'
 				&{prefix}placeholder
 					color $blue !important
