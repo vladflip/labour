@@ -1,1 +1,2 @@
 require './slider'
+require './menu'
