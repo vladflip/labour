@@ -2,8 +2,10 @@ $active
     background-color $blue
     width 100%
 
+$width = 180px
+
 .menu
-    width 180px
+    width $width
     list-style none
     padding 0
     margin 0
@@ -42,15 +44,15 @@ $active
     &-sub
         display none
         width 200px
-        left 200px
-        padding-left 20px
+        left $width
+        padding 0 20px
         top 0
         position absolute
         list-style none
         margin 0
-        border-top-right-radius 10px
-        border-bottom-right-radius 10px
-        background-color transparentify($grey, #fff, .97)
+        border-top-right-radius 5px
+        border-bottom-right-radius 5px
+        background-color $grey
         
         &--upward
             bottom 0
@@ -58,12 +60,12 @@ $active
     
     &-sub &-item
         text-align left
-        border-left 1px solid lighten($blue, 60%)
+        border-left none
         
         &-link
             padding-left 20px
             &:after
-                left 0
+                display none
     
     &-item:hover > &-sub
         display block
