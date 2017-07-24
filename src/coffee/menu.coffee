@@ -14,9 +14,7 @@ class Menu
             @subUpwardedScrollTop = @subScrollTop - sub.height() + $(li).height()
             @subUpwardedTop = sub.offset().top - sub.height() + $(li).height()
 
-            console.log @subUpwardedTop >= @menu.offset().top
-
-            if @isInsideWindow() and @isUpwardedInsideMenuHeight
+            if @isInsideWindow() and @isUpwardedInsideMenuHeight()
                 sub.addClass('menu-sub--upward')
 
     isInsideWindow: ->
