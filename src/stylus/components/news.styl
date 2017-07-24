@@ -1,0 +1,31 @@
+.news
+	margin 0 30px
+	
+	&-item
+		display flex
+		cursor pointer
+		text-decoration none
+		color inherit
+		margin-bottom 40px
+		
+	&-item:hover &-header
+		color $blue
+		
+	&-picture
+		width 200px
+		margin-right 20px
+	
+	&-header
+		margin 0 0 5px 0
+		line-height 1.3em
+		transition color 250ms ease-in-out
+	
+	&-excerpt
+		font-size 15px
+		line-height 1.3em
+		font-family Roboto Slab
+	
+	&-date
+		font-size 12px
+		margin-top 5px
+		color $blue
