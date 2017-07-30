@@ -11,7 +11,7 @@ gulp.task('default', ['stylus', 'coffee'], function(){
 
 		gulp.watch('src/stylus/**/*', ['stylus']);
 		gulp.watch('src/coffee/**/*', ['coffee']);
-		gulp.watch('*.html', function(){
+		gulp.watch('*.{php, html}', function(){
         	server.reload();
         });
 	}
