@@ -281,7 +281,7 @@
                         <div class="sidebar-item-icon"
                             style="background-image:url(img/ukraine.png)"></div>
                         <div class="sidebar-item-name">
-                            Верховна Ради України
+                            Верховна ради України
                         </div>
                     </a>
                 </div>
