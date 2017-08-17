@@ -22,3 +22,33 @@ function getThumbSrc($id)
 {
 	return wp_get_attachment_url( get_post_thumbnail_id($id) );
 }
+
+function getTheDate($id) {
+
+    $date = get_the_date('j n Y', $id);
+
+    $date = explode(' ', $date);
+
+    $day = $date[0];
+    $month = $date[1];
+    $year = $date[2];
+
+    $months = array(
+        'Января',
+        'Февраля',
+        'Марта',
+        'Апреля',
+        'Мая',
+        'Июня',
+        'Июля',
+        'Августа',
+        'Сентября',
+        'Октября',
+        'Ноября',
+        'Декабря'
+    );
+
+    $dayFormatted = '<span class="post_date--large">' . $day . '</span>';
+
+    return $dayFormatted . ' ' . $months[$month-1] . ' <span class="post_date--large">' . $year . '</span>';
+}
