@@ -13,11 +13,12 @@ $width = 160px
     &-item
         color $blue
         font-weight 400
+        list-style none
         letter-spacing 1px
         text-align right
         position relative
 
-        &-link
+        a
             position relative
             padding 13px 0
             color inherit
@@ -36,13 +37,13 @@ $width = 160px
                 height 1px
                 transition width 300ms ease-in-out, color 300ms ease-in-out
                 
-            &:hover&:after
+            &:hover:after
                 width 100%
             
-        &.current-menu-item > &-link:after
+        &.current-menu-item > a:after
             @extends $active
     
-    &-sub
+    .sub-menu
         display none
         width 200px
         left $width
@@ -59,7 +60,7 @@ $width = 160px
             bottom 0
             top auto
     
-    &-sub &-item
+    .sub-menu &-item
         text-align left
         border-left none
         
@@ -68,6 +69,6 @@ $width = 160px
             &:after
                 display none
     
-    &-item:hover > &-sub
+    &-item:hover > .sub-menu
         display block
         

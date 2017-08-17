@@ -7,6 +7,7 @@ add_action('init', 'include_scripts_and_styles');
 add_filter('show_admin_bar', '__return_false');
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'menus' );
+add_action('init', 'registerMenu');
 
 function include_scripts_and_styles()
 {
@@ -16,6 +17,11 @@ function include_scripts_and_styles()
 
 	wp_register_style('main-style', THEME_URI.'/css/style.css' );
 
+}
+
+function registerMenu() {
+    $args = array('header_menu' => __('Главное меню'));
+    register_nav_menus($args);
 }
 
 function getThumbSrc($id)
