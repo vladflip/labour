@@ -106,19 +106,19 @@
                         the_post();
                     ?> 
 
-                        <a href="#" class="news-item">
+                        <a href="<?= get_permalink($post->ID) ?>" class="news-item">
                             <div class="news-picture">
-                                <img src="http://lorempixel.com/200/150/city/" alt="News image">
+                                <img src="<?= getThumbSrc($post->ID) ?>" alt="News image">
                             </div>
                             <div class="news-content">
                                 <h3 class="news-header">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    <?= $post->post_title ?>
                                 </h3>
                                 <div class="news-excerpt">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium natus enim aliquam molestiae, modi eius autem quod, ut facere ea maxime.
+                                    <?= $post->post_excerpt ?>
                                 </div>
                                 <div class="news-date">
-                                    23.07.2017
+                                    <?= the_date() ?>
                                 </div>
                             </div>
                         </a>
