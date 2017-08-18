@@ -1,6 +1,4 @@
-<?php 
-    get_header();
-?>
+<?php get_header() ?>
 
 <div class="page">
     <div class="container">
@@ -10,6 +8,7 @@
             <div class="post">
                 <div class="post-content">
                     <?php 
+                        the_post();
                         the_content();
                     ?> 
                 </div>
