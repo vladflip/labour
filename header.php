@@ -27,9 +27,24 @@
                     Офіційний сайт <br> Департаментy праці та соціальної політики <br> Харківської міської ради
                 </div>
             </div>
-            <div class="hero-search">
-                <input class="hero-search-input" type="text" placeholder="Пошук">
+            <div class="hero-search" id="search">
+                <div class="hero-search-text">Пошук</div>
                 <i class="hero-search-icon fa fa-search"></i>
             </div>
         </div>
     </div>
+
+<div class="search-container">
+    <script>
+      (function() {
+        var cx = '009057717908683271800:rx7c3ovd6zc';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <gcse:search></gcse:search>
+</div>

@@ -1,0 +1,73 @@
+.search-container
+    position fixed
+    top 0
+    bottom 0
+    left 0
+    right 0
+
+    cursor pointer
+
+    background-color rgba(0,0,0, .7)
+    display flex
+    justify-content center
+    align-items center
+
+    z-index 201
+
+    &>div
+        margin-top -100px
+        max-width 760px
+
+        +below(1000px)
+            max-width 90%
+    *
+        cursor auto
+
+    input[type="button"]
+        cursor pointer
+
+.gsc-control-cse .gsc-table-result
+    font-family inherit
+
+.gsc-control-cse .gsc-input-box
+    height inherit
+
+table.gsc-search-box td
+    vertical-align inherit !important
+
+input.gsc-input
+.gsc-input-box
+.gsc-input-box-hover
+.gsc-input-box-focus
+.gsc-search-button input.gsc-search-button-v2
+    box-sizing content-box
+    line-height normal
+    margin-top 0px
+
+input.gsc-input
+    height 2rem !important
+
+td.gsib_a
+    padding 0 .5rem !important
+
+td.gsc-search-button
+    position relative
+
+input.gsc-search-button-v2
+    height 1.3rem !important
+    width 1rem !important
+    padding .7rem 2.5rem !important
+    margin-bottom -.4rem
+
+.gsc-input-box
+    height 2.5rem !important
+
+.gsst_b
+    height 2.5rem !important
+
+    .gsst_a
+        height 100% !important
+        display flex
+        align-items center
+        justify-content center
+        padding-top 0
