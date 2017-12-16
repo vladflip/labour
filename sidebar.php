@@ -1,5 +1,5 @@
 <div class="sidebar">
-    <h3 class="page-header">Корисні ресурси</h3>
+    <h3 class="page-header">Корисні посилання</h3>
     <div class="sidebar-item">
         <a target="_blank" href="http://www.city.kharkov.ua">
             <div class="sidebar-item-icon"
