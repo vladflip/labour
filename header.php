@@ -1,9 +1,26 @@
+<?php
+    $description = get_bloginfo('description');
+
+    if(is_single()){
+        $title = get_the_title();
+        $description = strip_tags(get_the_excerpt($post->ID));
+    }
+    elseif(is_page()){
+        $title = get_the_title('') . ' - '; 
+        $title .= get_bloginfo('name');
+    }
+    else{
+        $title = get_bloginfo('name');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Соціальний захист Харкова</title>
+    <title><?= $title ?></title>
     <meta name="google-site-verification" content="PAvN6d874h1Q3SYFV6qK7JsCVPuFb54dKZfCrvmcx-E" />
+    <meta name="Description" content="<?= $description ?>"> 
 
     <?php wp_enqueue_style('main-style'); ?>
     <?php wp_head(); ?>
