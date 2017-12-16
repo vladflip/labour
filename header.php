@@ -52,7 +52,7 @@
         </div>
     </div>
 
-<div class="search-container">
+<div class="search-container" style="display:none">
     <script>
       (function() {
         var cx = '009057717908683271800:rx7c3ovd6zc';
