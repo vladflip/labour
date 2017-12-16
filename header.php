@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Соціальний захист Харкова</title>
+    <meta name="google-site-verification" content="PAvN6d874h1Q3SYFV6qK7JsCVPuFb54dKZfCrvmcx-E" />
 
     <?php wp_enqueue_style('main-style'); ?>
     <?php wp_head(); ?>
