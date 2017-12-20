@@ -34,7 +34,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-    <div class="hero">
+    <div class="hero" 
+        style="background-image:url(<?=get_template_directory_uri() . '/img/hero.jpg'?>);">
         <div class="container">
             <div class="hero-crest"></div>
             <div class="hero-text">

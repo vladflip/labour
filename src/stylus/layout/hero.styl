@@ -1,6 +1,9 @@
 .hero
 	padding 50px 0
-	
+	margin-bottom 50px
+
+	// 	padding 10px 0
+
 	.container
 		display flex
 		height 100%
@@ -16,6 +19,9 @@
 	&-text
 		&-sign,
 		&-name
+			background-color rgba(white, .8)
+			border-radius 15px
+			padding 10px
 			text-align center
 			color $blue
 
@@ -26,11 +32,13 @@
 			font-family Roboto Slab
 			font-weight 400
 			line-height 50px
-		
+
 		&-name
-			margin-top 20px
+			max-width 400px
+			margin 20px auto 0
 			line-height 25px
-			font-size 15px
+			font-size 16px
+			letter-spacing 1px
 			font-weight 400			
 	
 	&-search
