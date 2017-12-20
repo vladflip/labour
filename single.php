@@ -20,8 +20,6 @@
                 <?php get_template_part('inc/post-footer') ?>
             </div>
         </div>
-
-        <?php get_sidebar() ?>
     </div>
 </div>
 
