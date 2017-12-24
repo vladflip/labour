@@ -37,6 +37,12 @@
                     <?php endwhile ?>
 
                 </div>
+
+                <div class="pagination">
+                    <?php
+                        pagination_bar();
+                    ?>
+                </div>
             </div>
             <?php get_template_part('sidebar') ?>
         </div>

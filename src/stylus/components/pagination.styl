@@ -1,0 +1,32 @@
+.pagination
+    margin auto
+    display flex
+    justify-content center
+    
+    .page-numbers
+        display block
+        padding 5px 10px
+        text-decoration none
+        color #444
+
+        transition color 150ms
+        
+        &:hover
+            color $blue
+        
+        &.current
+            border-bottom 1px solid $blue
+            color $blue
+    
+    .prev,
+    .next
+        color $blue
+        &:before
+            display block
+            font-family FontAwesome
+    .prev
+        &:before
+            content '\f060'
+    .next
+        &:before
+            content '\f061'
